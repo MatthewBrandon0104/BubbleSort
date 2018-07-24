@@ -3,9 +3,7 @@ def bubble_sort(array)
         i = 0
         while i < array.length
             value = array[i] <=> array[i + 1]
-            if value == 1
-                array[i], array[i + 1] = array[i + 1], array[i]
-            end
+            array[i], array[i + 1] = array[i + 1], array[i] if value == 1
             i += 1
         end
     end
